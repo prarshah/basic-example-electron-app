@@ -1,47 +1,30 @@
 # Keygen + Electron Example
 
-This is a minimal Electron application integrated with [Keygen](https://keygen.sh) to handle license key validation upon startup. It is based on the Quick Start Guide within the Electron documentation. For a more advanced licensing setup, and an example of how to use Keygen for auto updates, check out [our other Electron example app](https://github.com/keygen-sh/example-electron-app).
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
-
-## To Use
+### To Use
 
 ```bash
+
 # Clone this repository
-git clone https://github.com/keygen-sh/basic-example-electron-app
+ git clone https://github.com/prarshah/basic-example-electron-app.git
+
 # Go into the repository
-cd basic-example-electron-app
+ cd basic-example-electron-app
+
+# install dependencies ans start
+ yarn
+ yarn start
+
+```
+ When the app opens put the lisence key as:
+ ```
+ZGVtbw==.5YnwITi1ivETkNIqpGuBkC4Wv44pkG0Dzo08Z2TtSMnJq3bQc4W2nHx477mdzvlntbZWwDVlvstDnbwpvw68ejExXrEEisIkQkm0rwGWZIEBnBOhdVU2kM5-UHlBO__4BPJjEnWqtYgjM04U7HOhYdpgrMrV-JUB1hgXHxLlVeTOJK7GoTCQ6oxYv5e0up9hTPgZF0kl5GBXobshAJfKELqir2_yImYsTZVRuC5Q_C7bRkzIYULTqa600kyJe6gEkAnaNWRQdBqj87vkMfb5OWxmD5hVYRe9qwvmwpWXywE3Ex9sreo6PYjcTqMdv4xpk3zpll22OWHqSVu9iqVaYw==
 ```
 
-Next, install dependencies with [`yarn`](https://yarnpkg.comg):
-```
-yarn
-```
+You can link your own account by changing the KEYGEN_ACCOUNT_ID & KEYGEN_PRODUCT_ID.
 
-Then start the app:
-```
-yarn start
-```
+The lisence I(Prarthana) have created is valid for 5 days starting from 14 MArch 2020, 10:30 AM
+for product basic-example-electron-app
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-## Resources for Learning Electron
-
-- [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
-- [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+The logs will be visible on server side as follows:
+![Logs](api_logs.png?raw=true "Logs")

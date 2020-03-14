@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress BuyFluidPluginNoteInspection -->
 <html>
   <head>
     <meta charset="UTF-8">
@@ -8,9 +9,10 @@
     <script>
       const { prompt, confirm, alert } = require('smalltalk')
 
-      const KEYGEN_ACCOUNT_ID = '1fddcec8-8dd3-4d8d-9b16-215cac0f9b52' // Available at https://app.keygen.sh/settings
-      const KEYGEN_PRODUCT_ID = '5499e2ec-47e6-44cb-91e9-b5d5d65c5590'
+      const KEYGEN_ACCOUNT_ID = '058a35b5-67cd-445c-97dd-91a699ae71d1' // this prar_shah's demo account ID
+      const KEYGEN_PRODUCT_ID = 'fc88fb69-6919-4fa9-b6da-cadc90c2019b' // this is product_1's product ID
 
+      // pass the key (parameter) to check if lisence is valid
       async function activateAppWithLicenseKey(key) {
         const res = await fetch(`https://api.keygen.sh/v1/accounts/${KEYGEN_ACCOUNT_ID}/licenses/actions/validate-key`, {
           method: 'POST',
